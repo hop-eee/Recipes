@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  server:
+    build: server/
+    command: python ./server.py
+    ports:
+      - 1234:1234
+  database:
+    build: database/
+  cache:
+    duild: cache/
